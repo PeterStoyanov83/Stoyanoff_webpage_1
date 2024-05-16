@@ -1,0 +1,33 @@
+<!-- website/templates/website/base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoyanoff Guitars</title>
+    <link rel="stylesheet" href="{% static 'website/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Stoyanoff Guitars</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Начало</a></li>
+                <li><a href="{% url 'about' %}">За нас</a></li>
+                <li><a href="{% url 'products' %}">Продукти</a></li>
+                <li><a href="{% url 'services' %}">Услуги</a></li>
+                <li><a href="{% url 'gallery' %}">Галерия</a></li>
+                <li><a href="{% url 'contact' %}">Контакт</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer>
+        <p>&copy; 2024 Stoyanoff Guitars</p>
+    </footer>
+</body>
+</html>
