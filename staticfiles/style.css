@@ -1,15 +1,23 @@
-/* website/static/website/style.css */
+/* static/style.css */
+
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
     color: #333;
-    line-height: 1.6;
 }
 
-header, footer {
-    background-color: #333;
+header {
+    background: #333;
     color: #fff;
-    padding: 1em 0;
+    padding: 10px 0;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
 nav ul {
@@ -25,43 +33,64 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-.showcase {
-    color: #fff;
-    height: 400px;
-    text-align: center;
-    padding-top: 100px;
-}
-
-.showcase h1 {
-    font-size: 55px;
-    margin-top: 0;
-}
-
-.btn {
-    display: inline-block;
-    color: #fff;
-    background: #333;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-.btn:hover {
-    background: #555;
-}
-
-section {
-    padding: 20px 0;
+main {
+    padding: 20px;
 }
 
 footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-item {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    width: 200px; /* По-малка ширина за по-добро оформление */
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.gallery-item p {
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px); /* По-малка промяна за по-добър ефект */
+}
+
+h2 {
+    text-align: center;
     margin-top: 20px;
+    font-size: 2em;
+    color: #333;
 }

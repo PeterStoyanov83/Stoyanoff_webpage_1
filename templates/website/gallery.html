@@ -1,40 +1,29 @@
 <!-- website/templates/website/gallery.html -->
 {% extends 'website/base.html' %}
+{% load static %}
 
 {% block content %}
 <h2>Галерия</h2>
 <div class="gallery">
-    {% for item in media %}
-        <div class="gallery-item">
-            {% if item.media_type == "IMAGE" or item.media_type == "CAROUSEL_ALBUM" %}
-                <a href="{{ item.permalink }}" target="_blank">
-                    <img src="{{ item.media_url }}" alt="{{ item.caption }}">
-                </a>
-            {% elif item.media_type == "VIDEO" %}
-                <a href="{{ item.permalink }}" target="_blank">
-                    <video controls>
-                        <source src="{{ item.media_url }}" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </a>
-            {% endif %}
-        </div>
-    {% endfor %}
+    <div class="gallery-item">
+        <img src="{% static 'website/images/IMG_20200421_100535.jpg' %}" alt="!">
+        <p>Най-новият модел от Stoyanoff Guitars!</p>
+        
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'website/images/IMG_20201117_161939.jpg' %}" alt="Caption for image 2">
+        <p>Тест на новата китара от Stoyanoff Guitars.</p>
+        
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'website/images/IMG_20200113_193251.jpg' %}" alt="Caption for image 3">
+        <p>Изработка на нов модел от Stoyanoff Guitars.</p>
+        
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'website/images/received_343428593373726.jpeg' %}" alt="Caption for image 4">
+        <p>Най-добрите материали за най-добрите инструменти.</p>
+        
+    </div>
 </div>
 {% endblock %}
-
-<style>
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .gallery-item {
-        flex: 1 1 calc(33.333% - 10px);
-        box-sizing: border-box;
-    }
-    .gallery-item img, .gallery-item video {
-        width: 100%;
-        height: auto;
-    }
-</style>
