@@ -1,56 +1,100 @@
-// src/components/ServiceRequest.js
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import { useNavigate } from 'react-router-dom';
+import '../App.css';
 
 const ServiceRequest = () => {
-    const [form, setForm] = useState({
+    const [formData, setFormData] = useState({
         name: '',
         email: '',
-        service: 'setup',
+        service: '',
         message: ''
     });
+
     const navigate = useNavigate();
 
     const handleChange = (e) => {
-        setForm({ ...form, [e.target.name]: e.target.value });
-    }
+        const { name, value } = e.target;
+        setFormData(prevData => ({
+            ...prevData,
+            [name]: value
+        }));
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Обработване на формата, например изпращане на email
-        navigate('/success');
-    }
+
+        emailjs.send(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            formData,
+            process.env.REACT_APP_EMAILJS_USER_ID
+        )
+        .then((result) => {
+            console.log(result.text);
+            alert('Message sent successfully!');
+            navigate('/success'); // Redirect to Success page
+        }, (error) => {
+            console.log(error.text);
+            alert('An error occurred, please try again.');
+        });
+
+        setFormData({
+            name: '',
+            email: '',
+            service: '',
+            message: ''
+        });
+    };
 
     return (
-        <div>
+        <div className="service-request-container">
             <h2>Заявка за услуга</h2>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Вашето име:</label>
-                    <input type="text" name="name" value={form.name} onChange={handleChange} required />
-                </div>
-                <div>
-                    <label>Вашият email:</label>
-                    <input type="email" name="email" value={form.email} onChange={handleChange} required />
-                </div>
-                <div>
-                    <label>Услуга:</label>
-                    <select name="service" value={form.service} onChange={handleChange} required>
-                        <option value="setup">Сетъп</option>
-                        <option value="position_change">Смяна на позиции</option>
-                        <option value="hardware_change">Смяна на хардуер</option>
-                        <option value="nut_bridge">Изработване на нът/бридж</option>
-                        <option value="inspection">Инспектиране на инструмент</option>
-                    </select>
-                </div>
-                <div>
-                    <label>Допълнителна информация:</label>
-                    <textarea name="message" value={form.message} onChange={handleChange} required />
-                </div>
+                <label htmlFor="name">Вашето име:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="email">Вашият email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="service">Услуга:</label>
+                <select
+                    id="service"
+                    name="service"
+                    value={formData.service}
+                    onChange={handleChange}
+                    required
+                >
+                    <option value="">Изберете услуга</option>
+                    <option value="setup">Сетъп</option>
+                    <option value="hardware-change">Смяна на хардуер</option>
+                    <option value="string-replacement">Смяна на струни</option>
+                    <option value="custom-order">Специална поръчка</option>
+                </select>
+                <label htmlFor="message">Допълнителна информация:</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                ></textarea>
                 <button type="submit">Изпрати</button>
             </form>
         </div>
     );
-}
+};
 
 export default ServiceRequest;

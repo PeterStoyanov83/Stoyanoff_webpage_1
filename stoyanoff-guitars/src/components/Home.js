@@ -1,16 +1,14 @@
-// src/components/Home.js
 import React, { useEffect, useRef } from 'react';
-import './Home.css';
 
 const Home = () => {
     const videoRef = useRef(null);
 
     useEffect(() => {
         if (videoRef.current) {
-            videoRef.current.playbackRate = 0.4;
-            console.log('Видео елемента е намерен и скоростта на възпроизвеждане е зададена на 0.4');
+            videoRef.current.playbackRate = 0.5;
+            console.log('Home component loaded, video element found');
         } else {
-            console.log('Видео елемента не е намерен');
+            console.log('Home component loaded, video element not found');
         }
     }, []);
 
@@ -23,7 +21,7 @@ const Home = () => {
             </video>
             <div className="content">
                 <h2>Добре дошли в Stoyanoff Guitars</h2>
-                <p>Ръчно изработени китари за истински музикални ценители</p>
+                <p>Ние създаваме ръчно изработени китари с внимание към всеки детайл. Нашата страст към музиката и висококачествената изработка гарантират уникални инструменти, които ще ви вдъхновяват.</p>
                 <section>
                     <h2>Нашите китари</h2>
                     <p>Stoyanoff Guitars е специализиран в създаването на уникални, ръчно изработени китари. Всяка китара е направена с внимание към детайлите и страст към музиката.</p>
