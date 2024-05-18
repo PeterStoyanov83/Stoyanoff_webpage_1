@@ -1,0 +1,39 @@
+/* src/components/Header.css */
+.header {
+    background-color: #222;
+    padding: 1rem 0;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    max-height: 50px; /* Adjust size as needed */
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adjust spacing between links */
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white; /* Adjust as needed */
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}

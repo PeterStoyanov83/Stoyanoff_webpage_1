@@ -6,7 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Products from './components/Products';
 import Services from './components/Services';
-import Gallery from './components/Gallery';
+import MyGuitars from './components/MyGuitars';
 import Contact from './components/Contact';
 import ServiceRequest from './components/ServiceRequest';
 import Success from './components/Success';
@@ -24,7 +24,7 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="/services" element={<Services />} />
-                    <Route path="/gallery" element={<Gallery />} />
+                    <Route path="/my-guitars" component={<MyGuitars />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/service-request" element={<ServiceRequest />} />
                     <Route path="/success" element={<Success />} />

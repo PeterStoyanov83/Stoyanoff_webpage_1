@@ -1,15 +1,14 @@
-// src/components/Contact.js
+// src/pages/Contact.js
 import React from 'react';
+import GeneralContactForm from '../components/GeneralContactForm';
 
 const Contact = () => {
     return (
         <div>
-            <h2>Контакт</h2>
-            <p>Можете да се свържете с нас на следния адрес:</p>
-            <p>Email: info@stoyanoffguitars.com</p>
-            <p>Телефон: +359 123 456 789</p>
+            <h1>Contact Us</h1>
+            <GeneralContactForm />
         </div>
     );
-}
+};
 
 export default Contact;

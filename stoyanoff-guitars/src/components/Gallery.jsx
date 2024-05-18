@@ -1,4 +1,4 @@
-// src/components/Gallery.js
+// src/components/Gallery.jsx
 import React from 'react';
 
 const Gallery = () => {
