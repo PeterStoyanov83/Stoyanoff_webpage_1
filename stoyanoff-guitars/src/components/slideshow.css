@@ -1,0 +1,66 @@
+.guitar-detail-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    display: flex;  /* за да направим контейнера гъвкав */
+    justify-content: center;
+    align-items: center;
+    overflow: visible;  /* показваме излишъка */
+    border-radius: 10px;
+}
+
+.slideshow-container img {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+    object-fit: contain;  /* запазваме пропорциите на изображенията */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(-50%);
+}
+
+.next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 10px;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.guitar-detail-container p {
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 1rem;
+}

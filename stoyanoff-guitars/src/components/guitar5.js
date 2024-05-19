@@ -1,25 +1,24 @@
 import React from 'react';
-import img4 from '../assets/images/guitars/LP_purple_Set.jpg';
-
-const Guitar4 = () => {
+import img6 from '../assets/images/guitars/blue_P90_335.jpg';
+import "./MyGuitars.css"
+const Guitar5 = () => {
     return (
         <div className="guitar-detail-container">
             <h2>LP Inspired guitar</h2>
-            <img src={img4} alt="Най-добрите материали за най-добрите инструменти."/>
+            <img src={img6} alt="Най-добрите материали за най-добрите инструменти."/>
             <ul>
                 <li><strong>Тяло:</strong></li>
                 <ul>
-                    <li>Ламиниран корпус със отделен топ.</li>
-                    <li>Масивно тяло</li>
-                    <li>Кленово "Spalted" фурнир.</li>
-                    <li>Махагонови гръб</li>
+                    <li>Пресован ламиниран полу-кух корпус с централен блок — точно като оригиналите.</li>
+                    <li>Кленово флейм покритие на горната част.</li>
+                    <li>Махагонови гръб и страни.</li>
                     <li>Оформена шийка от махагон с двупосочен тръс род.</li>
                     <li>Дължина на мензурата: 24-9/16" (623.88mm).</li>
                 </ul>
                 <li><strong>Гриф:</strong></li>
                 <ul>
                     <li>Гриф от Грандила с Никел-хром медиум прагчета и перлени точкови инлеи.</li>
-                    <li>Нът от кост.</li>
+                    <li>Предварително прорязан нът за перфектно действие.</li>
                 </ul>
                 <li><strong>Хардуер:</strong></li>
                 <ul>
@@ -27,8 +26,7 @@ const Guitar4 = () => {
                 </ul>
             </ul>
         </div>
-)
-    ;
+    );
 }
 
-export default Guitar4;
+export default Guitar5;
