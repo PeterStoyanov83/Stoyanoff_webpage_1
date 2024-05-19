@@ -1,10 +1,10 @@
 import React from 'react';
-import "../App.css"
+
 const Guitar2 = () => {
     return (
         <div className="guitar-detail-container">
             <h2>Тест на новата китара от Stoyanoff Guitars.</h2>
-            <img src="/images/IMG-20201214-WA0005.jpeg" alt="Тест на новата китара от Stoyanoff Guitars." />
+            <img src="/stoyanoff-guitars/src/assets/images/guitars/IMG-20201214-WA0005.jpeg" alt="Тест на новата китара от Stoyanoff Guitars."/>
             <p>Подробна информация за този модел...</p>
         </div>
     );
