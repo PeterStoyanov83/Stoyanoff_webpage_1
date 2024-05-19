@@ -10,9 +10,11 @@ import MyGuitars from './components/MyGuitars';
 import Contact from './components/Contact';
 import ServiceRequest from './components/ServiceRequest';
 import Success from './components/Success';
+import Guitar1 from './components/guitar1';
+import Guitar2 from './components/guitar2';
+import Guitar3 from './components/guitar3';
+import Guitar4 from './components/guitar4';
 import './App.css';
-
-
 
 function App() {
     return (
@@ -20,14 +22,18 @@ function App() {
             <Header />
             <main>
                 <Routes>
-                    <Route exact path="/" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="/services" element={<Services />} />
-                    <Route path="/MyGuitars" element={<MyGuitars />} />
+                    <Route path="/my-guitars" element={<MyGuitars />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/service-request" element={<ServiceRequest />} />
                     <Route path="/success" element={<Success />} />
+                    <Route path="/guitar1" element={<Guitar1 />} />
+                    <Route path="/guitar2" element={<Guitar2 />} />
+                    <Route path="/guitar3" element={<Guitar3 />} />
+                    <Route path="/guitar4" element={<Guitar4 />} />
                 </Routes>
             </main>
             <Footer />

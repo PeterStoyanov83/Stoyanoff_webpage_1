@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "../App.css"
 const Guitar1 = () => {
     return (
         <div className="guitar-detail-container">
