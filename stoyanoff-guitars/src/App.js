@@ -24,7 +24,7 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="/services" element={<Services />} />
-                    <Route path="/my-guitars" component={<MyGuitars />} />
+                    <Route path="/MyGuitars" element={<MyGuitars />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/service-request" element={<ServiceRequest />} />
                     <Route path="/success" element={<Success />} />
