@@ -15,7 +15,7 @@ import Guitar2 from './components/guitar2';
 import Guitar3 from './components/guitar3';
 import Guitar4 from './components/guitar4';
 import Guitar5 from './components/guitar5';
-import Logo from './components/logo';
+
 import './App.css';
 
 
