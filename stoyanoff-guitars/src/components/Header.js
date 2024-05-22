@@ -1,6 +1,6 @@
 // src/components/Header.js
 import React from 'react';
-import logo from '../assets/images/logo/logo.svg'; // Update the path
+import logo from '../assets/images/logo/logo.png'; // Update the path
 import { Link } from 'react-router-dom';
 import "../App.css"
 

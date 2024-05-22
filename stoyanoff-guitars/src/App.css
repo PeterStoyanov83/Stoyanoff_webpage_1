@@ -126,7 +126,32 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* Home Page Styles */
+/* Common Styles for Pages */
+.page-container {
+    padding: 2rem 0;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+.page-container h2 {
+    font-size: 2.5rem;
+    font-family: 'Georgia', serif;
+}
+
+.page-container p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    line-height: 1.6;
+    font-family: 'Georgia', serif;
+}
+
+.page-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Home Page Specific Styles */
 .home-container {
     position: relative;
     overflow: hidden;
@@ -190,7 +215,7 @@ section p {
     font-family: 'Georgia', serif;
 }
 
-/* About Page Styles */
+/* About Page Specific Styles */
 .about-container {
     padding: 2rem 0;
     background-color: #fff;
@@ -228,7 +253,7 @@ section p {
     padding: 0 1rem;
 }
 
-/* Products Page Styles */
+/* Products Page Specific Styles */
 .products-container {
     padding: 2rem 0;
     background-color: #fff;
@@ -252,7 +277,7 @@ section p {
     font-family: 'Georgia', serif;
 }
 
-/* Services Page Styles */
+/* Services Page Specific Styles */
 .services-container {
     padding: 2rem 1rem;
     background-color: #f9f9f9;
@@ -317,9 +342,7 @@ section p {
     text-decoration: underline;
 }
 
-
-
-/* Contact Page Styles */
+/* Contact Page Specific Styles */
 .contact-container {
     padding: 2rem 0;
     background-color: #fff;
@@ -332,38 +355,20 @@ section p {
     font-family: 'Georgia', serif;
 }
 
-.contact-container p {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-}
-
-/* Service Request Form Styles */
-.service-request-container {
-    padding: 2rem 0;
-    background-color: #fff;
-    color: #333;
-    text-align: center;
-}
-
-.service-request-container h2 {
-    font-size: 2.5rem;
-    font-family: 'Georgia', serif;
-}
-
-.service-request-container form {
+.contact-container form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.service-request-container form label {
+.contact-container form label {
     font-size: 1.2rem;
     margin: 0.5rem 0;
 }
 
-.service-request-container form input,
-.service-request-container form select,
-.service-request-container form textarea {
+.contact-container form input,
+.contact-container form select,
+.contact-container form textarea {
     width: 100%;
     max-width: 400px;
     padding: 0.5rem;
@@ -371,7 +376,7 @@ section p {
     font-size: 1rem;
 }
 
-.service-request-container form button {
+.contact-container form button {
     padding: 0.7rem 1.5rem;
     font-size: 1rem;
     background-color: #007BFF;
@@ -381,11 +386,11 @@ section p {
     cursor: pointer;
 }
 
-.service-request-container form button:hover {
+.contact-container form button:hover {
     background-color: #0056b3;
 }
 
-/* Success Page Styles */
+/* Success Page Specific Styles */
 .success-container {
     padding: 2rem 0;
     background-color: #fff;

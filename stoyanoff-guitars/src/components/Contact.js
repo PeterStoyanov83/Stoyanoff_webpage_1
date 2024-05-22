@@ -1,7 +1,7 @@
 // src/pages/Contact.js
 import React from 'react';
 import GeneralContactForm from './GeneralContactForm';
-
+import '../App.css'
 const Contact = () => {
     return (
         <div>

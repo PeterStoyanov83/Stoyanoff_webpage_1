@@ -15,6 +15,7 @@ import Guitar2 from './components/guitar2';
 import Guitar3 from './components/guitar3';
 import Guitar4 from './components/guitar4';
 import Guitar5 from './components/guitar5';
+import Logo from './components/logo';
 import './App.css';
 
 
@@ -37,7 +38,9 @@ function App() {
                     <Route path="/guitar3" element={<Guitar3 />} />
                     <Route path="/guitar4" element={<Guitar4 />} />
                     <Route path="/guitar5" element={<Guitar5 />} />
+
                 </Routes>
+
             </main>
             <Footer />
         </Router>
