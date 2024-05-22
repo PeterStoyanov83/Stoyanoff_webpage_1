@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './MyGuitars.css';
+import '../App.css';
 
 // Импортиране на изображения
 import img1 from '../assets/images/guitars/IMG-20201117-WA0012.jpeg';

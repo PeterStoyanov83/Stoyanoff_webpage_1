@@ -1,6 +1,7 @@
 import React from 'react';
 import img4 from '../assets/images/guitars/LP_purple_Set.jpg';
-
+import './slideshow.css'
+import '../App.css'
 const Guitar4 = () => {
     return (
         <div className="guitar-detail-container">

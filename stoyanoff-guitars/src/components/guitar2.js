@@ -3,7 +3,7 @@ import img1 from '../assets/images/guitars/palemoon/239583059_200151315495354_46
 import img2 from '../assets/images/guitars/palemoon/231294096_143399071268690_8903589350833647743_n.jpg';
 import img3 from '../assets/images/guitars/palemoon/182696520_4236633399701950_2770955799849054575_n.jpg';
 import './slideshow.css';
-
+import '../App.css'
 const images = [img1, img2, img3 ];
 
 const Guitar3 = () => {

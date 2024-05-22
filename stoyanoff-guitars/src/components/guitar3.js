@@ -6,6 +6,7 @@ import img4 from '../assets/images/guitars/hellcaster/147118936_3588369124582087
 import img5 from '../assets/images/guitars/hellcaster/147464794_2586226958343972_5280937493404098859_n.jpg';
 import img6 from '../assets/images/guitars/hellcaster/147465007_250490376517268_434094051163987945_n.jpg';
 import './slideshow.css';
+import '../App.css'
 
 const images = [img1, img2, img3, img4, img5, img6];
 
