@@ -6,9 +6,10 @@ import "../App.css"
 
 const Header = () => {
     return (
+        <div className='container'>
          <header className="header">
             <div className="nav-bar">
-                <img src={logo} alt="Logo" className="logo" />
+                <img src={logo} alt="Logo" className="logo" width="30%" height="30%"  />
                 <nav>
                     <ul>
                         <li><Link to="/">Начало</Link></li>
@@ -20,6 +21,7 @@ const Header = () => {
                 </nav>
             </div>
         </header>
+        </div>
     );
 };
 

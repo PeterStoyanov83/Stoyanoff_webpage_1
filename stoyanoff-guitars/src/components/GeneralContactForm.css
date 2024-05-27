@@ -30,7 +30,7 @@
     display: block;
     margin-bottom: 0.5rem;
     font-size: 1rem;
-    color: #333;
+    color: #b9b9b9;
 }
 
 .form-group input,
@@ -62,10 +62,10 @@
 }
 
 .contact-form button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #78abc5;
 }
 
 .contact-container p {
     font-size: 1.2rem;
-    color: #555;
+    color: #c2c2c2;
 }

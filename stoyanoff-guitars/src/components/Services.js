@@ -1,12 +1,13 @@
 // src/components/Services.js
 import React from 'react';
 import {Link} from 'react-router-dom';
+import '../App.css'
 
 
 const Services = () => {
     return (
-        <div className="services-container">>
-            <h2>Услуги</h2>
+        <div className="container">
+            <h2 className='page-container'>Услуги</h2>
             <p>Освен създаването на уникални китари, предлагам и различни услуги по поддръжка и ремонт на вашите
                 инструменти. Ето някои от тях:</p>
             <ul>
@@ -16,9 +17,12 @@ const Services = () => {
                 <li>Изработване на нът/бридж: Ръчно изработени компоненти за вашата китара.</li>
                 <li>Проверка и подмяна/поправка на електроника: Диагностика и ремонт на електронните компоненти.</li>
                 <li>Инспектиране на инструмент</li>
+
+
             </ul>
             <Link to="/contact ">Свържете се с мен </Link>
             <p>
+
 
             </p>
         </div>

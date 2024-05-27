@@ -6,15 +6,16 @@
     text-align: center;
 }
 
-.gallery-container h2 {
-    font-size: 2.5rem;
+.gallery-container-h2 {
+    text-align: center;
+    font-size: 2rem;
     font-family: 'Georgia', serif;
 }
 
 /* Guitar Detail Container Styles */
 .guitar-detail-container {
-    width: 80%;
-    max-width: 800px;
+    width: 100%;
+    max-width: 600px;
     margin: 2rem auto;
     padding: 1.5rem;
     background-color: #222;
@@ -49,10 +50,17 @@
     color: #777;
 }
 
-.guitar-detail-container:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.instagram-reel {
+    display: flex;
+    justify-content: center;
 }
+
+.instagram-reel iframe {
+    border: #b7b7b7;
+    border-radius: 7px;
+    max-width: 100%;
+}
+
 
 /* Gallery Styles */
 .gallery {

@@ -4,8 +4,19 @@ import "./MyGuitars.css"
 const Guitar5 = () => {
     return (
         <div className="guitar-detail-container">
-            <h2>LP Inspired guitar</h2>
-            <img src={img6} alt="Най-добрите материали за най-добрите инструменти."/>
+            <h2>Моята 335-ца</h2>
+            <img className='gallery-img' src={img6} alt="Най-добрите материали за най-добрите инструменти."/>
+            <div className="instagram-reel">
+                <iframe
+                    src="https://www.instagram.com/reel/CLoYAKGALgy/embed"
+                    width="400"
+                    height="480"
+                    frameBorder="0"
+                    scrolling="no"
+                    allowTransparency="true"
+                    allow="encrypted-media"
+                ></iframe>
+            </div>
             <ul>
                 <li><strong>Тяло:</strong></li>
                 <ul>

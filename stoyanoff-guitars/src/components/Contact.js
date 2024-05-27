@@ -4,8 +4,8 @@ import GeneralContactForm from './GeneralContactForm';
 import '../App.css'
 const Contact = () => {
     return (
-        <div>
-            <h1>Контакти</h1>
+        <div className="container">
+            <h1 className="page-container">Контакти</h1>
             <GeneralContactForm />
         </div>
     );

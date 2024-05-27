@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
 import './GeneralContactForm.css';
-import '../App.css'
+import '../App.css';
+
 const GeneralContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -58,11 +59,11 @@ const GeneralContactForm = () => {
   }
 
   return (
-    <div className="contact-container">
-      <h2>Contact Us</h2>
+    <div className="container">
+      <h2>Свържете се с мен</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Име:</label>
           <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
         </div>
         <div className="form-group">
@@ -70,11 +71,11 @@ const GeneralContactForm = () => {
           <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message">Съобщение:</label>
           <textarea id="message" name="message" rows="5" value={formData.message} onChange={handleChange} required />
         </div>
-        <div className="form-group">
-          <LoadCanvasTemplate />
+        <div className="form-group captcha-container">
+          <LoadCanvasTemplate reloadColor="inherit" />
           <input
             type="text"
             value={captchaInput}

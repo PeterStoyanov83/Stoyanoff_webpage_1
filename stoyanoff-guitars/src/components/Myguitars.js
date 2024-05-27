@@ -11,8 +11,8 @@ import img5 from '../assets/images/guitars/blue_P90_335.jpg';
 
 const Myguitars = () => {
     return (
-        <div className="gallery-container">
-            <h2>Моите Китари</h2>
+        <div className="container">
+            <h2 className='gallery-container-h2'>Моите Китари</h2>
             <div className="gallery">
                 <div className="gallery-item">
                     <Link to="/guitar1">

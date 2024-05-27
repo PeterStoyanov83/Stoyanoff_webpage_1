@@ -14,8 +14,8 @@ const Logo = () => (
         .st0 { fill: #FFFFFF; }
       `}
     </style>
-    <rect width="100%" height="100%" style={{ fill: '#000021' }} />
-    <text x="50%" y="60%" dominantBaseline="middle" textAnchor="middle" fontFamily="Ligatures-script"
+    <rect width="80%" height="80%" style={{ fill: '#000021' }} />
+    <text x="50%" y="60%" dominantBaseline="left" textAnchor="middle" fontFamily="Ligatures-script"
           fontSize="200" fill="white">Stoyanoff
     </text>
     <text x="58%" y="67%" dominantBaseline="middle" textAnchor="middle" fontFamily="Arial, sans-serif" fontSize="30"

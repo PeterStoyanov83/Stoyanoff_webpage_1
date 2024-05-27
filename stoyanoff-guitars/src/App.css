@@ -77,7 +77,7 @@ button:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    max-width: 800px;
+    max-width: 700px;
     margin: auto;
     padding: 0 2rem;
 }
@@ -97,8 +97,8 @@ button:hover {
 
 /* Footer Styles */
 footer {
-    position: fixed;
-    bottom: 0;
+    position: fixed ;
+    bottom: 5px;
     width: 100%;
     font-size: 0.9rem;
 }
@@ -107,10 +107,12 @@ footer {
 .page-container {
     padding: 2rem 0;
     text-align: center;
+    font-family: 'Georgia', serif;
 }
 
 .page-container h2 {
     font-size: 2rem;
+    align-content: center;
 }
 
 .page-container p {
@@ -133,6 +135,30 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.video-overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    z-index: -1; /* Ensure the overlay is on top of the video */
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 159%;
+    height: 159%;
+    object-fit: contain;
+
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    filter: brightness(0.7); /* Darken the video for better text visibility */
 }
 
 .content {
@@ -172,6 +198,7 @@ section h2 {
 }
 
 .about-image {
+    align-content: center;
     width: 100%;
     max-width: 400px;
     margin-bottom: 1rem;
@@ -180,6 +207,7 @@ section h2 {
 
 .about-container p {
     padding: 0 1rem;
+
 }
 
 /* Products Page Specific Styles */
@@ -294,8 +322,10 @@ section h2 {
     display: inline-block;
 }
 
-.gallery img {
+.gallery-img {
     width: 100%;
+    max-width: 400px;
+    max-height: 700px;
     height: auto;
     display: block;
 }
@@ -304,4 +334,11 @@ section h2 {
     .gallery-item {
         width: calc(100% / 2 - 1rem);
     }
+}
+.captcha-container-button {
+  background-color: transparent;
+  color: inherit; /* Match the button text color with the rest of the form */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
