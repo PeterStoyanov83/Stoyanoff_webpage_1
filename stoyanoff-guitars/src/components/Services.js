@@ -1,32 +1,36 @@
 // src/components/Services.js
 import React from 'react';
-import {Link} from 'react-router-dom';
+
 import '../App.css'
 
 
+
 const Services = () => {
-    return (
-        <div className="container">
-            <h2 className='page-container'>Услуги</h2>
-            <p>Освен създаването на уникални китари, предлагам и различни услуги по поддръжка и ремонт на вашите
-                инструменти. Ето някои от тях:</p>
-            <ul>
-                <li>Сетъп: Оптимизиране на настройките за по-добро свирене.</li>
-                <li>Смяна на позиции: Подмяна на праговете за перфектно интониране.</li>
-                <li>Смяна на хардуер: Актуализиране на хардуера за по-добро звучене и издръжливост.</li>
-                <li>Изработване на нът/бридж: Ръчно изработени компоненти за вашата китара.</li>
-                <li>Проверка и подмяна/поправка на електроника: Диагностика и ремонт на електронните компоненти.</li>
+  return (
+    <div className="services-container">
+      <div className="services-background">
+        <img src="../assets/services/image1.jpg" alt="refret" />
+        <img src="../assets/services/image2.jpg" alt="neck repair" />
+        <img src="../assets/services/image3.jpg" alt="setup" />
+        <img src="../assets/services/image4.jpg" alt="Service 4" />
+        <img src="../assets/services/image5.jpg" alt="Service 5" />
+        <img src="../assets/services/image1.jpg" alt="Service 1" /> {/* Repeat the first image for smooth transition */}
+      </div>
+      <div className="services-content">
+        <h2>Ремонт и Ъпгрейд услуги: </h2>
+        <ul>
+                <li>Сетъп</li>
+                <li>Смяна на позиции </li>
+                <li>Смяна на хардуер </li>
+                <li>Изработване на нът/бридж</li>
+                <li>Проверка и подмяна/поправка на електроника</li>
                 <li>Инспектиране на инструмент</li>
-
-
             </ul>
-            <Link to="/contact ">Свържете се с мен </Link>
-            <p>
 
-
-            </p>
-        </div>
-    );
-}
+          <a href="#contact">Свържете се с нас</a>
+      </div>
+    </div>
+  );
+};
 
 export default Services;

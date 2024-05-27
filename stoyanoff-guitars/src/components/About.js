@@ -2,7 +2,6 @@
 import React from 'react';
 import aboutImage from '../assets/images/about/Copy of 4545SuEvMark.jpg'; // Update the path
 import '../App.css'
-
 const About = () => {
     return (
         <div className="container">
