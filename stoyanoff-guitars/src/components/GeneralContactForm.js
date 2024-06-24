@@ -52,36 +52,46 @@ const GeneralContactForm = () => {
   if (submitted) {
     return (
       <div className="contact-container">
-        <h2>Thank you!</h2>
-        <p>Your message has been sent successfully.</p>
+        <h2>Благодря</h2>
+        <p>Ващето съобщение беше изпратено успешно!</p>
       </div>
     );
   }
-
   return (
     <div className="container">
-      <h2>Свържете се с мен</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Име:</label>
-          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
+          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required/>
         </div>
         <div className="form-group">
           <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
+          <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required/>
         </div>
         <div className="form-group">
-          <label htmlFor="message">Съобщение:</label>
-          <textarea id="message" name="message" rows="5" value={formData.message} onChange={handleChange} required />
+          <label htmlFor="serviceType">Тип на услугата:</label>
+          <select id="serviceType" name="serviceType" value={formData.serviceType} onChange={handleChange} required>
+            <option value="" disabled selected>Choose service</option>
+            <option value="New guitar request">New guitar request</option>
+            <option value="Upgrade request">Upgrade request</option>
+            <option value="Repair request">Repair request</option>
+            <option value="Inspection request">Inspection request</option>
+            <option value="Setup request">Setup request</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div className="form-group">
+        <label htmlFor="message">Съобщение:</label>
+          <textarea id="message" name="message" rows="5" value={formData.message} onChange={handleChange} required/>
         </div>
         <div className="form-group captcha-container">
-          <LoadCanvasTemplate reloadColor="inherit" />
+          <LoadCanvasTemplate reloadColor="inherit"/>
           <input
-            type="text"
-            value={captchaInput}
-            onChange={handleCaptchaChange}
-            placeholder="Enter CAPTCHA"
-            required
+              type="text"
+              value={captchaInput}
+              onChange={handleCaptchaChange}
+              placeholder="Enter CAPTCHA"
+              required
           />
         </div>
         <button type="submit">Send</button>
